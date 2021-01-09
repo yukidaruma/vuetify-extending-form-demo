@@ -8,6 +8,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "tslib": "^1.14.1",
     "vue": "^2.6.11",
     "vuetify": "^2.2.11"
   },
