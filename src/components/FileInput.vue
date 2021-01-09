@@ -1,17 +1,15 @@
 <template>
   <div>
-    <v-cloak @drop.prevent="addDropFile" @dragover.prevent>
-      <v-file-input ref="fileInput" @change="handleFileChange" />
-      <p>
-        Current file size is <b>{{ JSON.stringify(fileSize) }}</b> bytes
-      </p>
-      <p>
-        Maximum file size is <b>{{ maxFileSize }}</b> bytes
-      </p>
-      <p>
-        Does my file exceed max file size? <b>{{ hasError }}</b>
-      </p>
-    </v-cloak>
+    <v-file-input ref="fileInput" @change="handleFileChange" />
+    <p>
+      Current file size is <b>{{ JSON.stringify(fileSize) }}</b> bytes
+    </p>
+    <p>
+      Maximum file size is <b>{{ maxFileSize }}</b> bytes
+    </p>
+    <p>
+      Does my file exceed max file size? <b>{{ hasError }}</b>
+    </p>
   </div>
 </template>
 
